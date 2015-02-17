@@ -1,0 +1,58 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\begin{document}
+
+\begin{equation}
+  \sqrt{n+1}= 1 + \cfrac{n}{2
+      		      + \cfrac{n}{2
+          	      + \cfrac{n}{2 + \cfrac{n}{2+\ldots} } } }
+\end{equation}\
+
+\begin{proof}
+Consider the quadratic equation 
+
+\begin{equation}
+x^2 + 2x - n=0
+\end{equation}
+
+\noindent where $n \ge 0$ is a nonnegative constant. The zeros of this polynomial are real (since its discriminant is positive), and the two roots have opposite signs (because the constant term is negative). The quadratic formula reveals that the positive root is as follows: 
+
+\begin{equation}
+  x = -1 + \sqrt{1+n}
+\end{equation}
+
+Rearranging (2), we see that:
+
+\begin{equation}
+x = \frac{n}{2+x}
+\end{equation}\
+
+Substituting (4) into the right hand side of (4) gives us
+
+\begin{equation}
+ x=  \cfrac{n}{2
+        + \cfrac{n}{2+x} }
+\end{equation}\
+
+Repeated substitution for $x$ in the right hand side of this equations gives the generalized continued fraction 
+
+\begin{equation}
+  x=  \cfrac{n}{2
+      		      + \cfrac{n}{2
+          	      + \cfrac{n}{2 + \cfrac{n}{2+\ldots} } } }
+\end{equation}\
+
+Lastly, substituting (3) into the left hand side of (6) and adding 1 to both sides gives us:
+
+\begin{equation}
+  \sqrt{n+1}= 1 + \cfrac{n}{2
+      		      + \cfrac{n}{2
+          	      + \cfrac{n}{2 + \cfrac{n}{2+\ldots} } } }
+\end{equation}
+
+\end{proof}
+
+
+\end{document}
